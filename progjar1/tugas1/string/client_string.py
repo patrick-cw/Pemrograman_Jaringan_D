@@ -1,5 +1,7 @@
 import sys
 import socket
+import random
+import string
 
 ipaddress = ['192.168.122.104', '192.168.122.14']
 
@@ -13,7 +15,8 @@ for i in ipaddress:
 
     try:
         # Send data
-        message = 'INI ADALAH DATA YANG DIKIRIM ABCDEFGHIJKLMNOPQ'
+        # Change K to 2000000 (2 mb) 
+        message = ''.join(random.choices(string.ascii_uppercase, k = 100))
         print(f"sending {message}")
         sock.sendall(message.encode())
         # Look for the response
