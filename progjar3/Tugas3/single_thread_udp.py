@@ -12,8 +12,8 @@ def kirim_semua():
         print(f"mendownload {urls[k]}")
         waktu_proses = download_gambar(urls[k])
         print(f"completed {waktu_proses} detik")
-        UDP_IP_ADDRESS = "192.168.122.168"
-        UDP_IP_ADDRESS2 = "192.168.122.194"
+        UDP_IP_ADDRESS = "192.168.122.191"
+        UDP_IP_ADDRESS2 = "192.168.122.90"
         if x == 0:
             kirim_gambar(UDP_IP_ADDRESS, 5050, f"{k}.jpg")
             print('Entered Server 1')
