@@ -71,7 +71,7 @@ class HttpServer:
 			return self.response(302,'Found','',dict(location='https://youtu.be/katoxpnTf04'))
 		if (object_address == '/santai'):
 			return self.response(200,'OK','santai saja',dict())
-
+		
 
 		object_address=object_address[1:]
 		if thedir+object_address not in files:
